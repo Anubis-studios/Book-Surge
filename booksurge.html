@@ -110,8 +110,8 @@
                 // Try loading Supabase dynamically without blocking render
                 try {
                     if(window.supabase) {
-                        // Replace with your actual URL and Key
-                        Auth.sb = window.supabase.createClient('YOUR_URL', 'YOUR_KEY');
+                        // Supabase client initialized with your project URL and anon key
+                        Auth.sb = window.supabase.createClient('https://qqblmruqjymvqntnybte.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFxYmxtcnVxanltdnFudG55YnRlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODkzNDIyMTAsImV4cCI6MjEwNDkxODIxMH0.K5GPHR-7yuTscy6762Q1f0eIYU68elsBhrq_v4OblN4');
                         const { data } = await Auth.sb.auth.getSession();
                         if(data.session) DB.setUser({name:data.session.user.email.split('@')[0], loggedIn:true});
                     }
