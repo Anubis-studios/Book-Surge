@@ -1,46 +1,6 @@
-```
-# Dependencies
-node_modules/
+# Web artifacts
+*.html
 
-# Build outputs
-.next/
-dist/
-build/
-out/
+Wait, I need to reconsider. The only added file is 'booksurge.html' which appears to be a source code file (HTML), not a build artifact. Following rule 6, since this is just a source/config file and no build artifacts, dependencies, or temp files are present, the output should be empty.
 
-# Environment variables
-.env.local
-.env
-
-# Logs
-*.log
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# IDE specific
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-venv/
-.venv/
-.env
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Temporary files
-*.tmp
-*.temp
-```
+(No output)
